@@ -48,6 +48,7 @@ public class frame3 extends frame2
 				c.weightx=0.2;
 			}
 			//c.anchor=GridBagConstraints.PAGE_START;
+			c.weighty=0.5;
 			c.gridx=count;
 			c.gridy=0;
 			middlePanel.add(headers[count],c);
@@ -58,14 +59,16 @@ public class frame3 extends frame2
 		//List<ArrayList<ArrayList>> ListTextF = new ArrayList<JTextField>();
 		for (int Row =0; Row<StudentNumber;Row++)
 		{
+			int RowA=Row+2;
 			for (int Col =0; Col<9; Col++)
 			{
-				JTextField Temp = new JTextField(13);
-				c.fill=GridBagConstraints.VERTICAL;
+				JTextField Temp = new JTextField(5);
+				//c.fill=GridBagConstraints.VERTICAL;
 				c.gridx=Col;
-				c.gridy=Row;
+				c.gridy=RowA;
 				c.ipadx=0;
 				c.ipady=0;
+				c.weighty=0.5;
 				c.weightx=0.2;
 				if(Col==7)
 				{
