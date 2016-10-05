@@ -4,6 +4,13 @@ Louis Gobin
 Organize the middle (table) panel in the frame
 */
 
+
+/**********************************************************
+NEED TO BE ABLE TO ADD + MODIFY NAME AND TITLE OF QUIZZ-HOMEWORK-EXAM
+NEED TO BE ABLE TO ADD STUDENT
+**********************************************************/
+
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -55,15 +62,16 @@ public class frame3 extends frame2
                 }
 
 		//Add the board itself
-		//List<JTextField> textF= new ArrayList<JTextField>();
+		//List<JTextField> textF = new ArrayList<JTextField>();
 		//List<ArrayList<ArrayList>> ListTextF = new ArrayList<JTextField>();
 		for (int Row =0; Row<StudentNumber;Row++)
 		{
 			int RowA=Row+2;
-			for (int Col =0; Col<9; Col++)
+			for (int Col =0; Col<8; Col++)
 			{
-				JTextField Temp = new JTextField(5);
-				//c.fill=GridBagConstraints.VERTICAL;
+				String test="Row="+Row+"|Col="+Col;
+				JTextField Temp = new JTextField(test, 5);
+				//textF.add(Temp);
 				c.gridx=Col;
 				c.gridy=RowA;
 				c.ipadx=0;

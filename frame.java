@@ -32,7 +32,7 @@ public class frame extends JFrame
 		bottomPanel=new JPanel();
 		JScrollPane scrollPane = new JScrollPane(middlePanel);
 		f.add(BorderLayout.NORTH,topPanel);
-		f.add(BorderLayout.CENTER,middlePanel);
+		f.add(BorderLayout.CENTER,scrollPane);
 		f.add(BorderLayout.SOUTH, bottomPanel);
 	}
 }
