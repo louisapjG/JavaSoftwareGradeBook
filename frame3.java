@@ -60,7 +60,7 @@ public class frame3 extends frame2
 			c.gridy=0;
 			middlePanel.add(headers[count],c);
                 }
-
+		/*IMPLEMENTATION OF TABLE CLASS INSTEAD IN PROGRESS
 		//Add the board itself
 		//List<JTextField> textF = new ArrayList<JTextField>();
 		//List<ArrayList<ArrayList>> ListTextF = new ArrayList<JTextField>();
@@ -84,7 +84,7 @@ public class frame3 extends frame2
 				}
 				middlePanel.add(Temp,c);
 			}
-		}
+		}*/
 		
 	}
 }
